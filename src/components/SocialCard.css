@@ -1,0 +1,54 @@
+#pp {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.container {
+  width: 50%;
+}
+
+#userName {
+  font-size: 0.85rem;
+  margin-left: 5px;
+}
+
+#date {
+  font-size: 0.8rem;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon {
+  margin: 20px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icons {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#author {
+  color: rgb(27, 149, 224);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  svg {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  #pp {
+    width: 100%;
+  }
+  .content {
+    margin-top: 1rem;
+  }
+}
