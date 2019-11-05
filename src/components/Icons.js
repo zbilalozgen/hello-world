@@ -21,7 +21,7 @@ export default class Icons extends Component {
         <Col xs="10">
           <footer className="icons">
             <div className="d-inline icon">
-              <FaRegComment /> <span> 9</span>
+              <FaRegComment /> <span> {this.props.mentions}</span>
             </div>
             <div
               style={{ color: this.state.colorRt }}
@@ -34,7 +34,7 @@ export default class Icons extends Component {
               }}
               className="d-inline icon"
             >
-              <FaRetweet /> <span> 17</span>
+              <FaRetweet /> <span>{this.props.rts}</span>
             </div>
 
             <div
@@ -48,7 +48,7 @@ export default class Icons extends Component {
               }}
               className="d-inline icon"
             >
-              <MdFavoriteBorder /> <span> 62</span>
+              <MdFavoriteBorder /> <span> {this.props.favs}</span>
             </div>
 
             <div className="d-inline icon">

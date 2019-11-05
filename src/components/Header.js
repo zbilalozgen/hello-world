@@ -17,28 +17,21 @@ class Header extends Component {
             <Card.Text>
               <Row>
                 <Col xs="4" md="2" className="d-flex align-items-center img">
-                  <img
-                    id="pp"
-                    src="https://media.licdn.com/dms/image/C5603AQEU5QEMsZcT3g/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=City4XWIIVpPzLL7FPtcbtwQnLkfZZRkA9_3vsseBrA"
-                  ></img>
+                  <img id="pp" src={this.props.pp}></img>
                 </Col>
                 <Col xs="8">
                   <Row className="align-items-start">
                     <h6 id="name">{this.props.name} </h6>
                     <light id="userName">
-                      @zbilalozgen <thin id="date">· 4 Nov</thin>
+                      <a href={`https://twitter.com/${this.props.userName}`}>
+                        {this.props.userName}
+                      </a>{" "}
+                      <thin id="date">· {this.props.date}</thin>
                     </light>
                   </Row>
 
                   <Row className="content">
-                    <p className="d-block">
-                      Learning React? Start Small!
-                      <br /> "author:{" "}
-                      <a id="author" href="https://twitter.com/zbilalozgen">
-                        @someguy
-                      </a>
-                      "
-                    </p>
+                    <p className="d-block">{this.props.tweet}</p>
                   </Row>
                 </Col>
               </Row>
